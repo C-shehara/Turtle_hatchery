@@ -1,0 +1,150 @@
+:root {
+  --margin-s: max(10%, 4rem);
+}
+h1 {
+  font-size: var(--h1-size);
+}
+h2 {
+  font-size: var(--h2-size);
+}
+h3 {
+  font-size: var(--h3-size);
+}
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+body {
+  font-size: var(--p-size);
+}
+
+.hero {
+  padding: 2rem 1rem;
+  margin-inline: auto;
+  background-color: #918378;
+
+  height: 85vh;
+}
+.hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 3%;
+}
+.hero-image {
+  width: 100%;
+  max-width: 30em;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text {
+  word-wrap: break-word;
+}
+
+.about-text {
+  text-align: center;
+  padding: 7% 20%;
+  background-color: #f3f1f1;
+  margin-bottom: 7%;
+}
+.about-img {
+  display: none;
+}
+
+.gallery,
+.g-title {
+  margin-inline: var(--margin-s);
+}
+
+.gallery {
+  margin-bottom: 7%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.g-container {
+  display: inline-block;
+}
+
+.g-container img {
+  display: inline-block;
+  width: 80%;
+  max-width: 250px;
+  aspect-ratio: 1.5/2;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.i1 {
+  object-position: right;
+}
+.contact {
+  background-color: #b1ad91;
+  padding: 5% var(--margin-s);
+}
+.c-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  padding: 5% 10%;
+  column-gap: 2em;
+}
+h3,
+p {
+  flex: 1;
+}
+.c-content p {
+  line-height: 2;
+  word-break: break-all;
+}
+.c-title-loc {
+  order: 0;
+}
+.c-loc {
+  order: 1;
+}
+.c-title-cont {
+  order: 2;
+}
+.c-cont {
+  order: 3;
+}
+@media only screen and (width<481) {
+}
+@media only screen and (width>= 481px) {
+  .hero-text {
+    text-align: center;
+  }
+  .hero .container {
+    padding: 3% 5%;
+  }
+}
+@media only screen and (width>= 768px) {
+  .hero .container {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 5%;
+    margin-inline: 4%;
+  }
+  .hero-image {
+    aspect-ratio: 1.2/2;
+    object-position: right;
+  }
+  .hero-text {
+    text-align: left;
+  }
+}
+@media only screen and (width>= 993px) {
+  .hero .container {
+    margin-inline: var(--margin-s);
+  }
+}
+
+@media only screen and (width>= 1201px) {
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS styles/general.css" />
+    <link
+      rel="stylesheet"
+      href="./CSS styles/purchase-donate.css
+    "
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#191970" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="./index.html"
+            ><img src="./Assets/logo.png" alt="" class="logo"
+          /></a>
+        </div>
+
+        <nav class="nav">
+          <a href="./index.html">Home</a>
+
+          <a href="./categories.html">Categories</a>
+
+          <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+
+          <a href="./threats.html">Threats</a>
+
+          <a href="./purchase-donate.html">Purchase & Donate</a>
+        </nav>
+        <a href="./donate.html" class="donate-button">
+          <button>
+            <p class="donate-text">DONATE</p>
+            <img class="heart" src="/Assets/heart icon.png" />
+          </button>
+        </a>
+        <div class="mobile-nav">
+          <input type="checkbox" name="menu-toggle" id="menu-toggle" />
+          <label for="menu-toggle" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+
+          <nav class="dropdown-menu">
+            <a href="./index.html">Home</a>
+
+            <a href="./categories.html">Categories</a>
+
+            <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+
+            <a href="./threats.html">Threats</a>
+
+            <a href="./purchase-donate.html">Purchase & Donate</a>
+            <a href="./purchase-donate.html" class="donate-button">
+              <button>
+                <p class="donate-text">DONATE</p>
+                <img class="heart" src="/Assets/heart icon.png" />
+              </button>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro-text">
+          <hr />
+          <h1>PURCHASE<span> & </span><br />DONATE</h1>
+          <p class="description">
+            We are dedicated to protecting and preserving the turtle population
+            in Sri Lanka. By supporting our hatcheries, you are helping to
+            ensure the survival of these magnificent creatures for generations
+            to come. Explore the options below to make a difference through
+            donations and purchases.
+          </p>
+        </div>
+      </section>
+      <section class="donation-options" id="donate">
+        <h2>Make a Donation</h2>
+        <div class="donation-option">
+          <h3>One-time Donation</h3>
+          <form>
+            <label for="donation-amount"
+              >Enter your desired donation amount:</label
+            >$
+            <input
+              type="number"
+              min="1"
+              id="donation-amount"
+              step="any"
+              required
+            />
+            <button type="submit">Donate Now</button>
+          </form>
+          <p>Suggested Donation Amounts: $10, $25, $50</p>
+          <progress value="0" max="100"></progress>
+          <p>
+            Help us reach our donation goal:
+            <span class="donation-progress">0%</span>
+          </p>
+        </div>
+        <div class="donation-option">
+          <h3>Monthly Subscription</h3>
+          <p>
+            By becoming a monthly donor, you provide consistent support to our
+            turtle hatcheries. In appreciation of your commitment, we offer the
+            following perks:
+          </p>
+          <form>
+            <input type="radio" id="bronze" name="monthly" required />
+            <label for="bronze"
+              >Bronze Donor - $10/month (exclusive newsletter updates)</label
+            >
+            <input type="radio" id="silver" name="monthly" />
+
+            <label for="silver">
+              Silver Donor - $25/month (personalized thank-you letter)
+            </label>
+            <input type="radio" id="gold" name="monthly" />
+            <label for="gold"
+              >Gold Donor - $50/month (name listed on our website)</label
+            >
+
+            <button type="submit">Donate Now</button>
+          </form>
+        </div>
+
+        <div class="donation-option">
+          <h3>Adopt a Turtle</h3>
+          <p>
+            Symbolically adopt a turtle and contribute to its care and
+            protection. Your support goes a long way in ensuring the survival of
+            these incredible creatures.
+          </p>
+          <form id="adopt-form">
+            <div>
+              <label for="turtle-name">Turtle Name:</label>
+              <input type="text" id="turtle-name" required />
+            </div>
+            <div>
+              <label for="turtle-species">Turtle Species:</label>
+              <select id="turtle-species">
+                <option value="" disabled selected>Select a species</option>
+                <option value="Green Turtle">Green Turtle</option>
+                <option value="Hawksbill Turtle">Hawksbill Turtle</option>
+                <option value="Loggerhead Turtle">Loggerhead Turtle</option>
+                <option value="Leatherback Turtle">Leatherback Turtle</option>
+                <option value="Olive Ridley Turtle">Olive Ridley Turtle</option>
+              </select>
+            </div>
+            <button type="submit">Fund Now</button>
+            <p id="adopt-status"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="local-merchandise" id="store">
+        <h2>Store</h2>
+
+        <div class="product-grid">
+          <div class="product">
+            <div>
+              <a href="./product-page.html"
+                ><img
+                  class="product-image"
+                  src="./Assets/Store/p1.jpg"
+                  alt="Image of the product"
+              /></a>
+            </div>
+            <div class="product-description">
+              <p>SAVE TURTLES PRINTED T-SHIRT</p>
+              <p>$25s</p>
+            </div>
+          </div>
+          <div class="product">
+            <div>
+              <a href="./product-page-newa2.html"
+                ><img
+                  class="product-image"
+                  src="./Assets/Store/p4.png"
+                  alt="Image of the product"
+              /></a>
+            </div>
+            <div class="product-description">
+              <p>TURTLE BAG</p>
+              <p>$100</p>
+            </div>
+          </div>
+          <div class="product">
+            <div>
+              <a href="./product-page-newa2.html"
+                ><img
+                  class="product-image"
+                  src="./Assets/Store/p5.jpg"
+                  alt="Image of the product"
+              /></a>
+            </div>
+            <div class="product-description">
+              <p>TURTLE CUSHION</p>
+              <p>$100</p>
+            </div>
+          </div>
+          <div class="product">
+            <div>
+              <a href="./product-page-newa2.html"
+                ><img
+                  class="product-image"
+                  src="./Assets/Store/p6.png"
+                  alt="Image of the product"
+              /></a>
+            </div>
+            <div class="product-description">
+              <p>TURTLE CANDLE</p>
+              <p>$100</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="thank-you">
+        <h2>Thank You for Your Support!</h2>
+        <p>
+          We are incredibly grateful for your generous contribution to our
+          turtle hatcheries. Your support plays a vital role in safeguarding
+          these amazing creatures and their natural habitat. Together, we are
+          making a positive impact on the future of turtles in Sri Lanka.
+        </p>
+      </section>
+      <!--<section class="donate">
+        <a href="#store">Go to shop</a>
+        <div class="donation">
+          <h2>Donate</h2>
+
+          <div class="col-1">
+            <form action="">
+              <div class="i1">Choose an amount to donate</div>
+              <div class="card-container">
+                <div class="card">
+                  <input
+                    type="radio"
+                    name="amount"
+                    class="card1"
+                    id="card1"
+                    checked
+                  />
+                  <label for="card1"> $10 </label>
+                </div>
+                <div class="card">
+                  <input type="radio" name="amount" class="card2" id="card2" />
+                  <label for="card2"> $25 </label>
+                </div>
+                <div class="card">
+                  <input type="radio" name="amount" class="card3" id="card3" />
+                  <label for="card3"> $50 </label>
+                </div>
+                <div class="card">
+                  <input type="radio" name="amount" class="card4" id="card4" />
+                  <label for="card4"> $100 </label>
+                </div>
+                <div class="card">
+                  <input type="radio" name="amount" class="card5" id="card5" />
+                  <label for="card5">
+                    $
+                    <input
+                      type="number"
+                      placeholder="Custom"
+                      min="1"
+                      class="custom"
+                      required
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="pay-monthly">
+                <input type="checkbox" id="monthly" />
+                <label for="monthly">Make this donation monthly</label>
+              </div>
+
+              <button><a href="#pay">DONATE</a></button>
+            </form>
+          </div>
+          <div class="col-2">
+            <img src="./Assets/bi5.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="store" id="store">
+        <h2>Store</h2>
+        <div class="product-grid">
+          <div class="product">
+            <div>
+              <a href="./product-page.html"
+                ><img
+                  class="product-image"
+                  src="./Assets/Store/newa2.jpg"
+                  alt="Image of the product"
+              /></a>
+            </div>
+            <div class="product-description">
+              <p>BLUE-CHECKERED PUFFER JACKET</p>
+              <p>$100</p>
+            </div>
+          </div>
+          <div class="product">
+            <div>
+              <a href="./product-page-newa2.html"
+                ><img
+                  class="product-image"
+                  src="./Assets/Store/newa2.jpg"
+                  alt="Image of the product"
+              /></a>
+            </div>
+            <div class="product-description">
+              <p>BLUE-CHECKERED PUFFER JACKET</p>
+              <p>$100</p>
+            </div>
+          </div>
+          <div class="product">
+            <div>
+              <a href="./product-page-newa2.html"
+                ><img
+                  class="product-image"
+                  src="./Assets/Store/newa2.jpg"
+                  alt="Image of the product"
+              /></a>
+            </div>
+            <div class="product-description">
+              <p>BLUE-CHECKERED PUFFER JACKET</p>
+              <p>$100</p>
+            </div>
+          </div>
+          <div class="product">
+            <div>
+              <a href="./product-page-newa2.html"
+                ><img
+                  class="product-image"
+                  src="./Assets/Store/newa2.jpg"
+                  alt="Image of the product"
+              /></a>
+            </div>
+            <div class="product-description">
+              <p>BLUE-CHECKERED PUFFER JACKET</p>
+              <p>$100</p>
+            </div>
+          </div>
+        </div>
+      </section>-->
+    </main>
+    <footer>
+      <div class="f-social">
+        <img src="./Assets/facebook.jpg" alt="" />
+        <img src="./Assets/twitter.jpg" alt="" />
+        <img src="./Assets/youtube.jpg" alt="" />
+        <img src="./Assets/instagram.jpg" alt="" />
+      </div>
+      <div class="f-nav">
+        <a href="./index.html">Home</a>
+        <a href="./categories.html">Categories</a>
+        <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+        <a href="./threats.html">Threats</a>
+        <a href="./store.html">Store</a>
+        <a class="f-donate" href="./donate.html">Donate </a>
+      </div>
+      <div>Site by CB009832</div>
+    </footer>
+  </body>
+</html>

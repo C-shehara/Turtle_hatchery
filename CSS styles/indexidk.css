@@ -1,0 +1,419 @@
+/*:root {
+  --clr-blue-dark: #071923;
+  --clr-blue-regular: #0d222e;
+  --clr-green: #a2d668;
+  --clr-light: #f2f2f2;
+
+  --ff-primary: Poppins sans-serif;
+  --ff-accent: "" sans-serif;
+}
+body {
+  min-height: 100vh;
+}
+
+section {
+  padding: 3rem 9em;
+  width: 100%;
+}
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  margin-top: 0;
+  background-color: #071923; /*fallback*/
+  background: url("/Assets/hero-img.png") no-repeat 100% 100%; /*fallback*/
+
+  background: url("/Assets/hero-img.png"),
+    linear-gradient(to top, black, #071923);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+
+.hero-section h1 {
+  margin: 0;
+  font-size: 4.9rem;
+  font-weight: bolder;
+}
+.hero-text {
+  padding: 4em 0;
+  color: white;
+}
+.slogan {
+  width: 25%;
+  color: var(--clr-light);
+  font-size: 0.8rem;
+  line-height: 2.2em;
+}
+.arrow-down {
+  background-color: #a2d668;
+  border: none;
+  height: 4em;
+  width: 4em;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.arrow-down:active {
+  background-color: rgba(162, 214, 104, 50%);
+}
+.introduction {
+  /*background-color: #eceaea;
+  color: white;*/
+  width: 100%;
+  height: 100vh;
+  padding: 2.7em 9em;
+}
+.introduction-container {
+  /*background-color: #071923;*/
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 25em 1fr;
+  align-content: center;
+  border-radius: 1em;
+  /* border-top-left-radius: 10em;
+  border-bottom-right-radius: 10em;*/
+}
+.intro-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  /* border-top-left-radius: 8em;*/
+}
+.intro-text {
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-left: 3em;
+  width: 100%;
+  line-height: 1.7em;
+}
+.intro-text p,
+.intro-text li {
+  font-size: 0.9rem;
+}
+.dot {
+  color: var(--clr-green);
+}
+.intro-text h2 {
+  margin: 0.3em 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+/*.introduction hr{
+  margin: 0;
+  border: none;
+  border-bottom: 2px solid red;
+  margin: 0 7em;
+  width: 83.5%;
+  padding-top: 4em;
+
+}*/
+.turtle-behaviour {
+  background-color: var(--clr-light);
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+/*.turtle-behaviour hr{
+  border: none;
+  border-bottom:2px solid #eceaea;
+  width: auto*/
+
+.turtle-behaviour h2 {
+  margin: 0;
+  padding-bottom: 0.4em;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+/*.behaviour{
+  background-color: black;
+  color: white;
+  padding: 4em;
+.turtle-behaviour-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 2em 9em 2em 9em;
+
+}
+
+}
+.behaviour-img{
+  width: 30%;
+}
+.behaviour-img img{
+  width: auto;
+}*/
+.behaviour-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.behaviour {
+  width: 32%;
+  border-radius: 10px;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-size: 0.9em;
+}
+.behaviour img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.image {
+  padding: 0;
+}
+.conservation-efforts {
+  background-color: #071923;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+.conservation-efforts h2 {
+  margin: 0;
+  padding-bottom: 0.4em;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.conservation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.con-img-column img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 250px;
+  border-bottom-right-radius: 250px;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+}
+.con-text-column {
+  width: 55%;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 0.9em;
+  line-height: 2.2em;
+}
+.con-img-column {
+  width: 50%;
+  border-radius: 500px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 0.9em;
+}
+.to-do {
+  background-color: #f2f2f2;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+.to-do h2 {
+  margin: 0;
+  padding-bottom: 0.4em;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.to-do-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 30px;
+  align-items: center;
+}
+.to-do-container > div {
+  text-align: center;
+}
+.to-do-image {
+  grid-area: 1/2/3/3;
+}
+.to-do-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#t5 {
+  grid-column: 2/3;
+}
+.text {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  justify-items: center;
+  align-items: end;
+  row-gap: 1em;
+}
+.text img {
+  width: 13%;
+}
+.visit-button {
+  grid-area: 4/2/5/3;
+  background-color: #071923;
+  width: 40%;
+  justify-self: center;
+  height: auto;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/////* <main>
+<section class="hero-section">
+  <div class="hero-text">
+    <h1>
+      PROTECT <br />
+      SEATURTLES
+    </h1>
+    <p class="slogan">EXPLORE ABOUT TURTLE CONSERVATION IN SRI LANKA</p>
+
+    <a href="#introduction"
+      ><button class="arrow-down">
+        <img src="" /><!--alt="Arrow down"-->
+      </button>
+    </a>
+  </div>
+</section>
+
+<section class="turtle-behaviour">
+  <h2>Turtle Behaviour<span class="dot">.</span></h2>
+  <div class="behaviour-container">
+    <div class="behaviour">
+      <h4>Nesting</h4>
+      <p>
+        Female turtles lay their eggs in sandy beaches where they dig a
+        nest cavity with their hind flippers. The process takes several
+        hours, leaving them vulnerable to predators. After laying the
+        eggs, the female covers the nest with sand and returns to the sea,
+        leaving the eggs to hatch on their own.
+      </p>
+    </div>
+    <div class="behaviour image">
+      <img
+        src="/Assets/behaviour-img.jpg"
+        alt="Turtle under sea near rocks and corals"
+      />
+    </div>
+    <div class="behaviour">
+      <h4>Feeding</h4>
+      <p>
+        Turtles eat both plants and animals, with their diet changing as
+        they grow older. Their strong jaws allow them to crush their food,
+        which they often swallow whole without chewing. Different turtle
+        species have specific adaptations for feeding, such as the ridged
+        beak of the green sea turtle.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="conservation-efforts">
+  <h2>Conservation Efforts<span class="dot">.</span></h2>
+  <div class="conservation-container">
+    <div class="con-img-column">
+      <img
+        src="/Assets/conservation-img.jpg"
+        alt="A hand holding a baby sea turtle"
+      />
+    </div>
+    <div class="con-text-column">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+        rem?
+      </p>
+      <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Consequatur, placeat tenetur! Nulla assumenda veniam aliquid amet
+        ad. Tenetur, aliquid quod?
+      </p>
+    </div>
+  </div>
+</section>
+<section class="to-do">
+  <h2>Experience Turtle Life<span class="dot">.</span></h2>
+  <div class="to-do-container">
+    <div class="text">
+      <img src="./Assets/tour.png" alt="" />
+      <p>
+        Take a guided turtle tour: Join an experienced guide to learn
+        about turtle behavior and habitat.
+      </p>
+    </div>
+    <div class="to-do-image">
+      <img
+        src="/Assets/to-do-img.jpg"
+        alt="Turtle walking on sandy beach"
+      />
+    </div>
+    <div class="text">
+      <img src="./Assets/release.png" alt="" />
+      <p>
+        Release hatchlings: Some hatcheries allow visitors to participate
+        in releasing hatchlings into the ocean.
+      </p>
+    </div>
+    <div class="text">
+      <img src="./Assets/dive.png" alt="" />
+      <p>
+        Swim with turtles: Go snorkeling or diving to see turtles in their
+        natural habitat.
+      </p>
+    </div>
+    <div class="text">
+      <img src="./Assets/visit.png" alt="" />
+      <p>
+        Visit conservation centers: Learn about conservation efforts and
+        enjoy educational exhibits and activities.
+      </p>
+    </div>
+    <div class="text" id="t5">
+      <img src="./Assets/donate.png" alt="" />
+      <p>
+        Volunteer for turtle conservation: Make a difference by donating
+        us for local turtle conservation.
+      </p>
+    </div>
+    <button class="visit-button">Vist Hatchery</button>
+  </div>
+</section>
+</main>
+<footer>
+<div class="f-social">
+  <a href="https://web.facebook.com/ " target="_blank"
+    ><img src="./Assets/facebook.png" alt=""
+  /></a>
+  <a href="https://www.instagram.com/" target="_blank"
+    ><img src="./Assets/instagram.png" alt=""
+  /></a>
+  <a href="https://twitter.com/" target="_blank"
+    ><img src="./Assets/twitter.png" alt=""
+  /></a>
+  <a href="https://www.youtube.com/" target="_blank"
+    ><img src="./Assets/youtube.png" alt=""
+  /></a>
+</div>
+<div class="f-nav">
+  <a href="./index.html">Home</a>
+  <a href="./categories.html">Categories</a>
+  <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+  <a href="./threats.html">Threats</a>
+  <a href="./store.html">Store</a>
+  <a class="f-donate" href="./donate.html">Donate </a>
+</div>
+<div>Site by CB009832</div>
+</footer>*/

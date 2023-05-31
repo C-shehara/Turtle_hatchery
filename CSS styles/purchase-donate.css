@@ -1,0 +1,200 @@
+:root {
+  --margin-s: max(10%, 4rem);
+}
+hr {
+  border: 0.7rem solid var(--clr-lightblue);
+  width: min(25%, 7rem);
+  margin: 0 auto 2em auto;
+}
+h1 {
+  font-size: var(--h1-size);
+}
+h2 {
+  font-size: var(--h2-size);
+}
+h3 {
+  font-size: var(--h3-size);
+}
+
+.intro {
+  /*background-image: url(../Assets/categories.jpg);
+  background-size: 100%;*/
+  background-color: var(--clr-midblue);
+}
+
+.intro-text {
+  max-width: 75ch;
+  padding: 2em 10%;
+}
+
+.intro-text h1 {
+  color: var(--clr-white);
+}
+.intro-text h1 span {
+  color: var(--clr-lightblue);
+}
+.donation-options,
+.local-merchandise,
+.thank-you {
+  padding: 10%;
+}
+.donation-options {
+  background-color: var(--clr-lightblue);
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  padding: 5px;
+  width: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.donation-option {
+  padding: 5%;
+  margin-bottom: 20px;
+
+  background-color: white;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.thank-you {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+/*
+.donate a {
+  color: #071923;
+
+  font-weight: bold;
+}
+
+.donation {
+  background-color: #f2f2f2;
+  padding: 4em 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.donation h2 {
+  grid-column: span 3;
+  padding: 0 0 1em 0;
+}
+.col-1,
+.col-2 {
+  grid-row: 2/3;
+}
+.col-1 {
+  background-color: white;
+  padding: 2em;
+  grid-column: 1/3;
+  z-index: 2;
+}
+.col-2 {
+  grid-column: 2/4;
+}
+.col-2 img {
+  width: 100%;
+  height: 106%;
+  object-fit: cover;
+  margin-top: -2%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.card {
+  background-color: #071923;
+  color: white;
+  width: 30%;
+  height: 5em;
+}
+
+.card input {
+  display: none;
+}
+.card .custom {
+  display: block;
+  width: 6em;
+  background-color: #0e222c42;
+  border: 2px solid #1a3a49;
+  font-family: Poppins, sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+.card label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.card input:checked + label {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  border: 2px solid #071923;
+}
+.pay-monthly {
+  margin-bottom: 1em;
+}
+form button {
+  width: 100%;
+  background-color: black;
+  padding: 0.7em;
+  border: none;
+  border-radius: 5em;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}*/
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.product-image {
+  width: 100%;
+  aspect-ratio: 1.5/2;
+  object-fit: cover;
+  margin: 0;
+}
+
+.product-description p {
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}

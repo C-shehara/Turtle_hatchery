@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+}
+.categories{
+  background-color:  #071923;
+  padding:12em 0 6em 0 ;
+}
+.categories h1{
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  text-decoration: underline #A2D668 5px;
+}
+.threats-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  flex: 1;
+}
+.tab a {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+.text {
+  display: none;
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+}
+.tab a:hover {
+  background-color: #fff;
+}
+
+.tab:focus .text{
+  display: block;
+}
